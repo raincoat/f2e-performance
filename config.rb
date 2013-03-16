@@ -54,6 +54,10 @@ with_layout :layout do
   page "/page/*"
 end
 
+activate :deploy do |deploy|
+  deploy.method = :git
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
