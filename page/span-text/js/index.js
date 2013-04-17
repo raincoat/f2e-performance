@@ -8,7 +8,7 @@ $(function(){
     , l = str.length;
 
   while (i < l) {
-    wrap.append($(document.createElement('span'), {
+    wrap.append($('<span>', {
       text: str.charAt(i)
     }))
     i++
